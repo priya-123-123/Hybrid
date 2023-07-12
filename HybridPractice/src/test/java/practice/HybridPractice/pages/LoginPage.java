@@ -16,7 +16,7 @@ public class LoginPage {
 	
 	public LoginPage(WebDriver ldriver) {
 		this.driver=ldriver;
-		PageFactory.initElements(driver,LoginPage.class);
+		
 	}
 	
 	@FindBy(id="username") WebElement username;
@@ -32,7 +32,7 @@ public class LoginPage {
 	}
 	
 	public void findBrokenLinks() {
-		String homepage;
+	
 		String currenturl;
 		int responsecode;
 		for (WebElement ele : links) {

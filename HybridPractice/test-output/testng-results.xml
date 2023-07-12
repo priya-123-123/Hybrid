@@ -2,39 +2,39 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-12T07:17:16Z" name="Suite" finished-at="2023-07-12T07:17:20Z" duration-ms="4139">
+  <suite started-at="2023-07-12T12:47:37Z" name="Default suite" finished-at="2023-07-12T12:48:15Z" duration-ms="38369">
     <groups>
     </groups>
-    <test started-at="2023-07-12T07:17:16Z" name="Test" finished-at="2023-07-12T07:17:20Z" duration-ms="4139">
+    <test started-at="2023-07-12T12:47:37Z" name="Default test" finished-at="2023-07-12T12:48:15Z" duration-ms="38369">
       <class name="practice.HybridPractice.tests.LoginTest">
-        <test-method is-config="true" signature="InitiateObjects()[pri:0, instance:practice.HybridPractice.tests.LoginTest@312aa7c]" started-at="2023-07-12T12:47:16Z" name="InitiateObjects" finished-at="2023-07-12T12:47:16Z" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="InitiateObjects()[pri:0, instance:practice.HybridPractice.tests.LoginTest@536f2a7e]" started-at="2023-07-12T18:17:37Z" name="InitiateObjects" finished-at="2023-07-12T18:17:37Z" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitiateObjects -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:practice.HybridPractice.tests.LoginTest@312aa7c]" started-at="2023-07-12T12:47:16Z" name="setup" finished-at="2023-07-12T12:47:19Z" duration-ms="3528" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:practice.HybridPractice.tests.LoginTest@536f2a7e]" started-at="2023-07-12T18:17:37Z" name="setup" finished-at="2023-07-12T18:18:14Z" duration-ms="37715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginApplication()[pri:0, instance:practice.HybridPractice.tests.LoginTest@312aa7c]" started-at="2023-07-12T12:47:19Z" name="loginApplication" finished-at="2023-07-12T12:47:20Z" duration-ms="458" status="PASS">
+        <test-method signature="brokenlinks()[pri:2, instance:practice.HybridPractice.tests.LoginTest@536f2a7e]" started-at="2023-07-12T18:18:14Z" name="brokenlinks" finished-at="2023-07-12T18:18:15Z" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginApplication -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:practice.HybridPractice.tests.LoginTest@312aa7c]" started-at="2023-07-12T12:47:20Z" name="teardownMethod" finished-at="2023-07-12T12:47:20Z" duration-ms="0" status="PASS">
+        </test-method> <!-- brokenlinks -->
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:practice.HybridPractice.tests.LoginTest@536f2a7e]" started-at="2023-07-12T18:18:15Z" name="teardownMethod" finished-at="2023-07-12T18:18:15Z" duration-ms="199" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginApplication status=SUCCESS method=LoginTest.loginApplication()[pri:0, instance:practice.HybridPractice.tests.LoginTest@312aa7c] output={null}]]]>
+                <![CDATA[[TestResult name=brokenlinks status=SUCCESS method=LoginTest.brokenlinks()[pri:2, instance:practice.HybridPractice.tests.LoginTest@536f2a7e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:practice.HybridPractice.tests.LoginTest@312aa7c]" started-at="2023-07-12T12:47:20Z" name="teardown" finished-at="2023-07-12T12:47:20Z" duration-ms="138" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:practice.HybridPractice.tests.LoginTest@536f2a7e]" started-at="2023-07-12T18:18:15Z" name="teardown" finished-at="2023-07-12T18:18:15Z" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- practice.HybridPractice.tests.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

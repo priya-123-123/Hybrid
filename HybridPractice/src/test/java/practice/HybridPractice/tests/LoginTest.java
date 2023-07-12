@@ -15,16 +15,23 @@ public class LoginTest extends BaseClass {
 
 	
 	
-	@Test
+	@Test(enabled=false)
 	
 	public void loginApplication() {
 		
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp=PageFactory.initElements(driver,LoginPage.class);
 		lp.loginToApplication("supriya", "pass@123");
 		
 		
+	}
+	
+	@Test(priority = 2)
+	
+	public void brokenlinks() {
+		LoginPage lp=PageFactory.initElements(driver,LoginPage.class);
+		lp.findBrokenLinks();
 	}
 	
 	
