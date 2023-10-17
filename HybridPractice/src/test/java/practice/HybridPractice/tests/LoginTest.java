@@ -15,7 +15,7 @@ public class LoginTest extends BaseClass {
 
 	
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	
 	public void loginApplication() {
 		
@@ -27,7 +27,7 @@ public class LoginTest extends BaseClass {
 		
 	}
 	
-	@Test(priority = 2)
+	@Test(enabled = false)
 	
 	public void brokenlinks() {
 		LoginPage lp=PageFactory.initElements(driver,LoginPage.class);

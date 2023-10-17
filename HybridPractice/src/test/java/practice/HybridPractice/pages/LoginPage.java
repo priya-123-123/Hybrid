@@ -19,9 +19,9 @@ public class LoginPage {
 		
 	}
 	
-	@FindBy(id="username") WebElement username;
-	@FindBy(name="pw") WebElement password;
-	@FindBy(xpath="//input[@id='Login']") WebElement loginbtn;
+	@FindBy(id="Username") WebElement username;
+	@FindBy(name="Password") WebElement password;
+	@FindBy(xpath="//input[@value='Log in']") WebElement loginbtn;
 	@FindBy(xpath="//a") List<WebElement> links;
  	
 	public void loginToApplication(String uname,String pw) {

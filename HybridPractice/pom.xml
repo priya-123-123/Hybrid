@@ -62,8 +62,13 @@
 					<version>3.1.2</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>xmls/testng.xml</suiteXmlFile>
+							<suiteXmlFile>xmls/${xmlfile}</suiteXmlFile>
 						</suiteXmlFiles>
+						<systemPropertyVariables>
+							<browsernmae>${browser}</browsernmae>
+							<urlname>${url}</urlname>
+						</systemPropertyVariables>
+						
 					</configuration>
 				</plugin>
 				<plugin>

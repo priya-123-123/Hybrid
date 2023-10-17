@@ -6,6 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import practice.HybridPractice.utility.BrowserFactory;
 import practice.HybridPractice.utility.ConfigReader;
@@ -20,10 +21,13 @@ public class BaseClass {
 		cf=new ConfigReader();
 		
 	}
+	@Parameters({"browser","url"})
 	@BeforeClass
-	public void setup() {
-		driver=BrowserFactory.startApplication(driver, cf.getBrowser(), cf.getUrl());
+	public void setup(String browser,String url) {
+		//driver=BrowserFactory.startApplication(driver, cf.getBrowser(), cf.getUrl());
+		driver=BrowserFactory.startApplication(driver, browser, url);
 	}
+	
 	
 	@AfterClass
 	public void teardown() {
