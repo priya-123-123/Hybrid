@@ -21,7 +21,7 @@ public class BaseClass {
 		cf=new ConfigReader();
 		
 	}
-	@Parameters({"browser","url"})
+	@Parameters({"browser","urltobetested"})
 	@BeforeClass
 	public void setup(String browser,String url) {
 		//driver=BrowserFactory.startApplication(driver, cf.getBrowser(), cf.getUrl());
