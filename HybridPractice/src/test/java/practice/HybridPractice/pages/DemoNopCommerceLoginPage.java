@@ -11,17 +11,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class DemoNopCommerceLoginPage {
 	WebDriver driver;
 	
-	public LoginPage(WebDriver ldriver) {
-		this.driver=ldriver;
+	public DemoNopCommerceLoginPage(WebDriver driver) {
 		
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="Username") WebElement username;
+	@FindBy(id="Email") WebElement username;
 	@FindBy(name="Password") WebElement password;
-	@FindBy(xpath="//input[@value='Log in']") WebElement loginbtn;
+	@FindBy(xpath="//button[contains(text(),'Log in')]") WebElement loginbtn;
 	@FindBy(xpath="//a") List<WebElement> links;
  	
 	public void loginToApplication(String uname,String pw) {

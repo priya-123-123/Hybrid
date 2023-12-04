@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import practice.HybridPractice.pages.BaseClass;
-import practice.HybridPractice.pages.LoginPage;
+import practice.HybridPractice.pages.DemoNopCommerceLoginPage;
 import practice.HybridPractice.utility.BrowserFactory;
 
 public class LoginTest extends BaseClass {
@@ -21,7 +21,7 @@ public class LoginTest extends BaseClass {
 		
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		LoginPage lp=PageFactory.initElements(driver,LoginPage.class);
+		DemoNopCommerceLoginPage lp=PageFactory.initElements(driver,DemoNopCommerceLoginPage.class);
 		lp.loginToApplication("supriya", "pass@123");
 		
 		
@@ -30,7 +30,7 @@ public class LoginTest extends BaseClass {
 	@Test(enabled = false)
 	
 	public void brokenlinks() {
-		LoginPage lp=PageFactory.initElements(driver,LoginPage.class);
+		DemoNopCommerceLoginPage lp=PageFactory.initElements(driver,DemoNopCommerceLoginPage.class);
 		lp.findBrokenLinks();
 	}
 	
