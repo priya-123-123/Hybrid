@@ -31,6 +31,15 @@ public static int  getRowCount() {
 	return rows;
 	
 }
+
+public static int  getcolumnCount() {
+	
+	
+	
+	return sheet.getRow(0).getPhysicalNumberOfCells();
+	
+}
+
 public static Object getcellData(int rownum, int colnum) {
 	DataFormatter formatter= new DataFormatter();
 	Object value= formatter.formatCellValue(sheet.getRow(rownum).getCell(colnum));

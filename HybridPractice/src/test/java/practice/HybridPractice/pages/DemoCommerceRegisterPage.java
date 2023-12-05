@@ -28,6 +28,7 @@ public DemoCommerceRegisterPage(WebDriver driver) {
 	@FindBy(id = "Password") WebElement password;
 	@FindBy(id = "ConfirmPassword") WebElement confirmPassword;
 	@FindBy(id = "register-button") WebElement RegisterButton;
+	@FindBy(xpath="//div[@class='result']") WebElement registerSuccessMessage;
 	
 	public boolean selectGenderasFemale() {
 		femalegender.click();
@@ -81,6 +82,11 @@ public DemoCommerceRegisterPage(WebDriver driver) {
 	public void clickonRegister() {
 		RegisterButton.click();
 	}
+	
+	public String getSuccessMessage() {
+		return registerSuccessMessage.getText();
+	}
+	
 	
 	
 	
